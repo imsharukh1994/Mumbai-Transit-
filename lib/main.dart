@@ -1,6 +1,9 @@
+import 'package:flutter/material.dart';
 import 'app/app.dart';
+import 'core/services/app_initializer.dart';
 
-void main() {
-  // TODO: Initialize app dependencies and run the Mumbai Transit+ application.
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await AppInitializer.initialize();
   runApp(const MumbaiTransitApp());
 }
