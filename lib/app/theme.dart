@@ -13,13 +13,11 @@ class AppTheme {
       onSecondary: Colors.white,
       error: AppColors.error,
       onError: Colors.white,
-      background: AppColors.lightBackground,
-      onBackground: AppColors.onBackground,
-      surface: AppColors.surface,
+      surface: AppColors.lightBackground,
       onSurface: AppColors.onSurface,
     ),
     scaffoldBackgroundColor: AppColors.lightBackground,
-    cardTheme: const CardTheme(
+    cardTheme: const CardThemeData(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(20)),
       ),
@@ -51,13 +49,11 @@ class AppTheme {
       onSecondary: Colors.white,
       error: AppColors.error,
       onError: Colors.white,
-      background: AppColors.darkBackground,
-      onBackground: Colors.white,
-      surface: Color(0xFF111827),
+      surface: AppColors.darkBackground,
       onSurface: Colors.white,
     ),
     scaffoldBackgroundColor: AppColors.darkBackground,
-    cardTheme: const CardTheme(
+    cardTheme: const CardThemeData(
       color: Color(0xFF111827),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(20)),
