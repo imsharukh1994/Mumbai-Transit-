@@ -1,6 +1,15 @@
 import 'package:go_router/go_router.dart';
+import 'routes.dart';
 
-// TODO: Define app routes and navigation paths for the Mumbai Transit+ experience.
+// TODO: Add route implementations once feature screens are created.
 final GoRouter appRouter = GoRouter(
-  routes: <GoRoute>[],
+  initialLocation: AppRoutes.splash,
+  routes: <GoRoute>[
+    GoRoute(
+      path: AppRoutes.splash,
+      builder: (context, state) {
+        return const SizedBox.shrink();
+      },
+    ),
+  ],
 );
